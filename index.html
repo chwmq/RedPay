@@ -10,17 +10,8 @@
   <button id="myButton" onclick="myFunction()" onmouseout="outFunc()">
   <span class="tooltiptext" id="myTooltip">点击支付</span>
   </button>
-    <iframe id="myIframe" src="http://redpay.tttttttttt.top/api.php/?to=abc&amount=100" width="250" height="350" hidden></iframe>
+    <iframe id="myIframe" src="http://redpay.tttttttttt.top/api.php/?to=abc&amount=100" width="250" height="350"></iframe>
     <p id="messageDisplay">等待支付结果</p>
-    <script>
-        function myFunction() {
-        document.getElementById('myButton').style.display = 'none';
-        document.getElementById('myIframe').style.display = 'block'; }
-        window.addEventListener('message', (event) => {
-            if (event.origin !== 'http://redpay.tttttttttt.top/') {return;}
-            const message = event.data;
-            document.getElementById('messageDisplay').textContent = `验证结果: ${message}`;
-            document.getElementById('myIframe').style.display = 'none';});
-    </script>
+    
 </body>
 </html>
